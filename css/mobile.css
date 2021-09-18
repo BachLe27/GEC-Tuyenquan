@@ -1,0 +1,95 @@
+
+
+@media screen and (max-width: 960px) {
+   .menu {
+      display: none;
+   }
+   .menu a {
+      border-radius: 0;
+      padding: 1rem 0.8rem;
+   }
+
+   .menu.is-active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 0.3rem 0;
+   }
+
+   .nav-bar {
+      padding: 0.8rem 1rem !important;
+   }
+
+   .nav-bar.is-active {
+      padding-top: 0.2rem !important;
+      padding-bottom: 0rem !important;
+      background-color: rgba(0, 0, 0, 0.9) !important;
+      box-shadow: none;
+   }
+
+   .hamburger {
+      display: block;
+   }
+
+   .logo img {
+      height: 40%;
+      width: 40%;
+   }
+
+   .about-item {
+      width: 75%;
+   }
+
+   .slider {
+      width: 80%;
+   }
+
+   .contact-item {
+      margin-left: 0rem;
+      width: 85%;
+      padding: 0;
+   }
+   .sub-contact-item:first-child {
+      margin-right: 1rem;
+   }
+}
+
+
+@media screen and (max-width: 660px) {
+   .logo img {
+      height: 60%;
+      width: 70%;
+   }
+
+   .about-item {
+      width: 80%;
+   }
+
+   .slider {
+      width: 100%;
+   }
+
+   .slide-text {
+      font-size: 1.9rem;
+   }
+   .contact-item {
+      margin-left: 0rem;
+      width: 100%;
+      padding: 0;
+   }
+   
+}
+
+
+@media screen and (min-width: 960px) {
+   .menu.is-active {
+      background-color: transparent;
+   }
+   .nav-bar.is-active {
+      background-color: transparent;
+   }
+}
