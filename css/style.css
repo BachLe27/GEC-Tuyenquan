@@ -92,7 +92,7 @@
 /* Home */
 
 .home {
-   background: url('/img/home.jpg') rgba(0, 0, 0, 0.7) no-repeat center/cover;  
+   background: url('../img/home.jpg') rgba(0, 0, 0, 0.7) no-repeat center/cover;  
    background-blend-mode: overlay;
    height: 100vh;
    text-align: center;
