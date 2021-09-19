@@ -55,14 +55,21 @@ $(document).scroll(function() {
 
 $(document).scroll(function() {
    const scroll = $(window).scrollTop();
+   const mark = $('.mark');
    if (scroll > 350) {
-      $(".mark:nth-child(1)").css("display", "block");
+      $(mark[0]).css("display", "block");
    }
 
    if (scroll > 550) {
-      $(".mark:nth-child(2)").css("display", "block");
+      $(mark[1]).css("display", "block");
    }
 
+   if (scroll > 1100) {
+      $(mark[2]).css("display", "block");
+   }
+   if (scroll > 1200) {
+      $(mark[3]).css("display", "block");
+   }
 });
 
 
@@ -81,8 +88,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("dot");
+  const slides = $(".slide");
+  const dots = $(".dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (let i = 0; i < slides.length; i++) {
