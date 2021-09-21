@@ -171,8 +171,8 @@
 }
 
 .slider {
-   height: 75vh;
-   width: 60vw;
+   height: 80vh;
+   width: 68vw;
    margin-top: 1rem;
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
    position: relative;
@@ -187,14 +187,14 @@
  }
 .slide img {
    width: 100%;
-   height: 75vh;
-   object-fit: fill;
+   height: 80vh;
+   object-fit: cover;
 }
 
 .slider .overlay {
    top: 0;
    position: absolute;
-   height: 75vh;
+   height: 80vh;
    width: 100%;
    background: rgba(0, 0, 0, 0.6);
    z-index: 1;
@@ -230,8 +230,9 @@
 }
 
 .forming-item img {
-  width: 100%;
-  height: 100%;
+  width: 370px;
+  height: 420px;
+  object-fit: cover;
 }
 
 /* Overlay-info */

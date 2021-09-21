@@ -64,10 +64,10 @@ $(document).scroll(function() {
       $(mark[1]).css("display", "block");
    }
 
-   if (scroll > 1100) {
+   if (scroll > 1000) {
       $(mark[2]).css("display", "block");
    }
-   if (scroll > 1200) {
+   if (scroll > 1100) {
       $(mark[3]).css("display", "block");
    }
 });
