@@ -102,7 +102,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   display: flex;
    flex-direction: column;
    padding: 2rem 0;
    /* object-fit: cover; */
