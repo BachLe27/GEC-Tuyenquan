@@ -104,10 +104,9 @@
    align-items: center;
    flex-direction: column;
    padding: 2rem 0;
-   /* object-fit: cover; */
 }
 
-.header {
+.head {
    margin-bottom: 5rem;
 }
 
