@@ -11,22 +11,16 @@ const scrolledNav = {
    "box-shadow": "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
 }
 
-// Navbar
+// Navbar && Scroll
 $(document).scroll(function() {
-   const scroll = $(window).scrollTop(); 
-   if (scroll < 10) {
-      $(".nav-bar").css(initialNav);
-
+const scroll = $(window).scrollTop(); 
+if (scroll < 10) {
+   $(".nav-bar").css(initialNav);
+      
    } else {
       $(".nav-bar").css(scrolledNav);
    }
 })  
-
-$('.hamburger').on('click', function() {
-   $('.hamburger').toggleClass('is-active');
-   $('.menu').toggleClass('is-active');
-   $('.nav-bar').toggleClass('is-active');
-})
 
 function removeActive() {
    $(".option").each(function(){
@@ -38,7 +32,7 @@ function addActive(number) {
    $(`.menu :nth-child(${number})`).addClass("is-active");
 }
 
-const level = [0, 550, 1300, 2000, 3100, 100000];
+const level = [0, 560, 1300, 2000, 3100, 100000];
 
 $(document).scroll(function() {
    const scroll = $(window).scrollTop(); 
@@ -51,26 +45,32 @@ $(document).scroll(function() {
    }
 });
 
-// Item Appear 
 
+// Item Appear 
 $(document).scroll(function() {
    const scroll = $(window).scrollTop();
    const mark = $('.mark');
    if (scroll > 350) {
       $(mark[0]).css("display", "block");
    }
-
    if (scroll > 550) {
       $(mark[1]).css("display", "block");
    }
 
-   if (scroll > 1000) {
+   if (scroll > 1100) {
       $(mark[2]).css("display", "block");
    }
    if (scroll > 1100) {
       $(mark[3]).css("display", "block");
    }
 });
+
+
+$('.hamburger').on('click', function() {
+   $('.hamburger').toggleClass('is-active');
+   $('.menu').toggleClass('is-active');
+   $('.nav-bar').toggleClass('is-active');
+})
 
 
 // Slide 
@@ -102,3 +102,39 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Count-down timer 
+const countDownDate = new Date("Oct 5, 2021 11:00:10").getTime();
+
+const count = setInterval(() => {
+      // Get today's date and time
+   let now = new Date().getTime();
+
+   // Find the distance between now and the count down date
+   let distance = countDownDate - now;
+
+   // Time calculations for days, hours, minutes and seconds
+   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   if (days < 10) days = '0' + days;
+   if (hours < 10) hours = '0' + hours;
+   if (minutes < 10) minutes = '0' + minutes;
+   if (seconds < 10) seconds = '0' + seconds;
+
+   // Display 
+   $("#day").text(days);
+   $("#hour").text(hours);
+   $("#min").text(minutes);
+   $("#sec").text(seconds);
+
+   if (distance < 0) {
+      $("#day").text('00');
+      $("#hour").text('00');
+      $("#min").text('00');
+      $("#sec").text('00');
+      clearInterval(count);
+   }
+
+})

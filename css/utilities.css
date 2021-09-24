@@ -52,6 +52,19 @@
    padding: 0.5rem 0;
 }
 
+.px-1 {
+   padding: 0 1rem;
+}
+.px-2 {
+   padding: 0 2rem;
+}
+.px-3 {
+   padding: 0 3rem;
+}
+.px-sm {
+   padding: 0 0.5rem;
+}
+
 /* Margin */
 .my-sm {
    margin: 0.5rem 0;
@@ -101,27 +114,30 @@
    margin-bottom: 3rem;
 }
 
+.ta-left {
+   text-align: left;
+}
 
 /* Button */
 
 .btn {
    padding: 0.7rem 2rem;
-   border: none;
    cursor: pointer;
-   font-family: var(--third-font);
-   font-size: 1rem;
 }
 
 .btn-primary {
    background-color: var(--primary-color);
+   /* background-color: transparent; */
    color: #fff;
    transition: 0.5s;
    transition-timing-function: ease-in-out;
+   border: 0.3px solid #fff;
+   font-size: 1rem;
+   font-weight: bold;
 }
 
-
 .btn-primary:hover {
-   filter: brightness(130%);
+   background-color: rgba(0,0,0,0.7);
 }
 
 /* Active */

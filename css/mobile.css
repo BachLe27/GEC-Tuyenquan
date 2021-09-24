@@ -60,6 +60,10 @@
    .forming-container {
       flex-direction: column;
    }
+
+   #about {
+      top: -5rem;
+   }
 }
 
 @media screen and (max-width: 660px) {
