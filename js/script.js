@@ -103,7 +103,7 @@ function showSlides(n) {
 }
 
 // Count-down timer 
-const countDownDate = new Date("Oct 5, 2021 11:00:10").getTime();
+const countDownDate = new Date("Oct 1, 2021 11:00:10").getTime();
 
 const count = setInterval(() => {
       // Get today's date and time
