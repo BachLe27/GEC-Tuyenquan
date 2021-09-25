@@ -263,6 +263,7 @@
    margin: 1rem;
    position: relative;
    flex-grow: 0;
+   cursor: url('../img/Logo.cur'), auto;
 }
 
 .forming-item img {
