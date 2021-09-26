@@ -264,6 +264,9 @@
    position: relative;
    display: flex;
    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .forming-item p {
@@ -288,6 +291,15 @@
    animation: growth linear 0.3s;
    margin: 1rem 2rem;
    /* background-color: #f1f1f1; */
+}
+
+
+.display-none {
+   display: none;
+}
+
+.display-block {
+   display: block;
 }
 
 /* Overlay-info */

@@ -115,6 +115,28 @@
       width: 90vw;
    }
 
+   .forming-item {
+      flex-direction: column;
+   }
+
+   .forming-info {
+      width: 90%;
+   }
+/*    
+   .display-none, .display-block {
+      display: none;
+   } */
+   
+   .forming-img-top {
+      display: block;
+   }
+
+   .forming-img-bottom {
+      display: none;
+   }
+
+   
+
    .slot {
       margin: 2rem 0.5rem 1rem;
    }
