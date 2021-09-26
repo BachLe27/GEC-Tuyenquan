@@ -254,22 +254,40 @@
 
 .forming-container {
    display: flex;
-   flex-flow: row wrap;
    align-items: center;
    justify-content: center;
+   flex-direction: column  ;
 }
 
 .forming-item {
    margin: 1rem;
    position: relative;
-   flex-grow: 0;
-   cursor: url('../img/Logo.cur'), auto;
+   display: flex;
+   width: 100%;
 }
 
+.forming-item p {
+   text-align: left; 
+   line-height: 1.5;
+   margin-bottom: 1rem;
+   font-family: var(--fourth-font);
+}
+
+/* 370 * 420 */
 .forming-item img {
   width: 370px;
   height: 420px;
   object-fit: cover;
+}
+
+.forming-info {
+   width: 60%;   
+   display: flex;
+   flex-direction: column;
+   font-family: var(--secondary-font);
+   animation: growth linear 0.3s;
+   margin: 1rem 2rem;
+   /* background-color: #f1f1f1; */
 }
 
 /* Overlay-info */
@@ -283,40 +301,9 @@
    }
 }
 
-.forming-overlay {
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   top: 0;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-   display: flex;
-   background-color: rgba(0, 0, 0, 0.6);
-}
-
-.forming-info {
-   position: absolute;
-   width: 90%;
-   height: 90%;
-   top: 5%;
-   left: 5%;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   color: #fff;
-   font-family: var(--secondary-font);
-   animation: growth linear 0.3s;
-   display: none;
-}
 
 
-.forming-item:hover .forming-info {
-   display: flex;
-   background-color: rgba(31, 82, 145, 1);
-}
+
 
 /* Contact */
 
