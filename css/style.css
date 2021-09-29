@@ -95,8 +95,9 @@
 }
 
 .home {
-   background: url('GEC/img/home.jpg') rgba(0, 0, 0, 0.7) no-repeat center/cover;  
-   background-blend-mode: overlay;  
+   /* background: url('/img/landing-bg.png') no-repeat left/cover padding-box;   */
+   /* background-blend-mode: overlay;   */
+   background-color: #1f5291;
    min-height: 100vh;
    text-align: center;
    display: flex;
@@ -106,16 +107,30 @@
    padding: 2rem 0;
 }
 
+.landing-bg {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   object-fit: cover;
+}
+
 .head {
    margin-bottom: 5rem;
 }
 
 /* Count-down */
 .count-down {
+   position: absolute;
+   bottom: 10%;
+   left: 8%;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+}
+.count-down-title {
+   color:#fff;
+   text-shadow: 2px 2px #000;
 }
 
 .timer {
@@ -129,7 +144,9 @@
    color: #fff;
    font-family: var(--primary-font);
    text-align: center;
-   margin: 2rem 1rem 1rem;
+   margin: 1rem 1rem 1rem;
+   text-shadow: 2px 2px #000;
+   /* font-weight: bold; */
 }
 
 .num {
@@ -222,9 +239,10 @@
    display: none;
  }
 .slide img {
-   width: 100%;
    height: 80vh;
-   object-fit: cover;
+   width: 100%;
+   /* height: 100%; */
+   /* object-fit: contain; */
 }
 
 .slider .overlay {
@@ -337,7 +355,7 @@
 }
 
 .contact-item {
-   width: 70%;
+   width: 80%;
 }
 
 .contact-item p {
