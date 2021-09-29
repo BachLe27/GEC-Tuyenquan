@@ -120,29 +120,6 @@
 
 /* Button */
 
-.btn-primary {
-   padding: 0.5rem 2rem;
-   cursor: pointer;
-   background-color: #f3f3f3;
-   color: var(--primary-color);
-   transition: 0.5s;
-   transition-timing-function: ease-in-out;
-   border: 0.3px solid #fff;
-   font-size: 1.3rem;
-   font-weight: bold;
-   margin-bottom: 2rem;
-   position: absolute;
-   right: 14%;
-   bottom: 15%;
-   border-radius: 20px;
-   text-transform: uppercase;
-   font-family: 'UTM Avo';
-   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.btn-primary:hover {
-   background-color: rgba(255, 255, 255, 0.5)
-}
 
 /* Active */
 .is-active {
