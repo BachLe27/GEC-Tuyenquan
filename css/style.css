@@ -158,7 +158,7 @@
 
 /* About */
 .about {
-   min-height: 70vh;
+   min-height: 50vh;
    width: 100%;
    display: flex;
    flex-direction: column;
