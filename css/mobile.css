@@ -193,6 +193,10 @@
    .count-down {
       margin-top: 5rem;
    }
+
+   .transparent {
+      display: none;
+   }
 }
 
 
