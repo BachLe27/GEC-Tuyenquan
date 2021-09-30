@@ -95,7 +95,12 @@
 }
 
 .home {
-   background: url('../img/landing-bg.png') fixed bottom center/cover;
+   /* background: url('../img/landing-bg.png') fixed bottom center/cover; */
+
+   background: url("../img/landing-bg.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: bottom;
    height: 100vh;
    text-align: center;
    display: flex;
@@ -103,6 +108,9 @@
    align-items: center;
    flex-direction: column;
    padding: 2rem 0;
+   -o-background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size:cover;
 }
 
 
