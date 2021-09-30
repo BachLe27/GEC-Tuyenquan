@@ -1,10 +1,30 @@
 @media screen and (max-width: 1400px) {
-   .timeline, .timer {
-      width: 80%;
+   .count-down {
+      left: 40%;
+   }
+
+   .num {
+      font-size: 3.5rem;
+   }
+
+   .buttons {
+      margin-bottom: 5rem;
+      margin-left: 10rem;
+   }
+
+   .btn-img {
+      width: 300px;
+      margin-bottom: -10%;
+   }
+
+   .timeline {
+      margin-top: 4rem;
+      width: 500px;
    }
 }
 
 @media screen and (max-width: 992px) {
+
    .menu {
       display: none;
    }
@@ -44,8 +64,29 @@
       width: 40%;
    }
 
+   .buttons {
+      margin-left: 0;
+   }
+
+   .btn-img {
+      display: none;
+   }
+
+   .home-container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .count-down {
+      position: relative;
+      left: 0;
+      margin-top: 1rem;
+   }
+
    .timeline {
-      width: 100%;
+      margin-top: 100px;
+      margin-bottom: 0;
+      margin-left: 0;
    }
 
    .about-item {
@@ -72,39 +113,13 @@
 }
 
 
-@media screen and (min-width: 992px) {
-   .menu.is-active {
-      background-color: transparent;
-   }
-   .nav-bar.is-active {
-      background-color: transparent;
-   }
-}
+
 
 @media screen and (max-width: 768px) {
 
-   .home {
-      height: 80vh;
-   }
    .logo img {
       height: 60%;
       width: 70%;
-   }
-
-   .count-down {
-      width: 100%;
-   }
-
-   .home-container {
-      flex-direction: column;
-   }
-
-   .btn-img {
-      display: none;
-   }
-
-   .num {
-      font-size: 2.3rem;
    }
 
    .about-item {
@@ -156,18 +171,26 @@
 
    .forming-img-bottom {
       display: none;
+   }  
+
+   .timeline {
+      width: 400px;
    }
+ 
    .slot {
-      margin: 2rem 0.5rem 1rem;
+      margin: 1rem 0.7rem;
    }
 
    .btn-primary {
       width: max-content;
    }   
+
    .slide {
       object-fit: cover;
       height: 70%;
    }
+
+
 
 }
 
@@ -176,5 +199,14 @@
    
    .contact-info {
       flex-direction: column;
+   }
+}
+
+@media screen and (min-width: 992px) {
+   .menu.is-active {
+      background-color: transparent;
+   }
+   .nav-bar.is-active {
+      background-color: transparent;
    }
 }

@@ -95,8 +95,8 @@
 }
 
 .home {
-   background: url('../img/landing-bg.png') fixed right center/cover;
-   min-height: 100vh;
+   background: url('../img/landing-bg.png') fixed bottom center/cover;
+   height: 100vh;
    text-align: center;
    display: flex;
    justify-content: center;
@@ -185,7 +185,7 @@
    font-family: var(--primary-font);
    text-align: center;
    margin: 1rem 1rem 1rem;
-   text-shadow: 3px 3px #000;
+   text-shadow: 2px 2px #000;
    /* font-weight: bold; */
 }
 
