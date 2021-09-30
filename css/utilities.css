@@ -220,9 +220,6 @@
    background-color: var(--primary-color);
 }
 
-.transparent {
-   color: transparent;
-}
 .visible {
    display: none !important;
 }

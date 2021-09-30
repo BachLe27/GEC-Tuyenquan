@@ -204,8 +204,11 @@
       margin-top: 5rem;
    }
 
-   .transparent {
+   .location-icon::before {
       display: none;
+   }
+   .break {
+      display: inline;
    }
 }
 
