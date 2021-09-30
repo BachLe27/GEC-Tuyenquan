@@ -1,5 +1,5 @@
 :root {
-   --primary-font: 'UTM Avo';
+   --primary-font: 'UTM Avo', 'Cabin';
    --secondary-font: 'Raleway', sans-serif;
    --third-font: 'Cabin', sans-serif;
    --fourth-font: 'Open Sans';
