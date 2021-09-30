@@ -1,32 +1,8 @@
-@media screen and (max-width: 1200px) {
-   .landing-bg {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      object-position: 0% 30%;
-   }
-
-   .buttons {
-      width: 20%;
-      right: 2%;
-      top: 18%;
-   }
-
-   .btn-img {
-      width: 400px;
-      object-fit: cover;
-      margin-bottom: -3rem;
-      /* display: none; */
-   }
-    .btn-primary {
-      width: max-content;
-   }   
-   .count-down {
-      bottom: 2%;
-      left: 20%;
+@media screen and (max-width: 1400px) {
+   .timeline, .timer {
+      width: 80%;
    }
 }
-
 
 @media screen and (max-width: 992px) {
    .menu {
@@ -68,33 +44,8 @@
       width: 40%;
    }
 
-   .landing-bg {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      object-position: 0% 30%;
-   }
-
-   .buttons {
-      width: 20%;
-      right: 10%;
-      bottom: -35%;
-   }
-
-   .btn-img {
-      width: 300px;
-      object-fit: cover;
-      margin-bottom: -3rem;
-      /* display: none; */
-   }
-
-   .btn-primary {
-      width: max-content;
-   }     
-
-   .count-down {
-      bottom: 18%;
-      left: 20%;
+   .timeline {
+      width: 100%;
    }
 
    .about-item {
@@ -140,37 +91,19 @@
       width: 70%;
    }
 
-   .landing-bg {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      object-position: 5% 40%;
+   .count-down {
+      width: 100%;
    }
 
-   .buttons {
-      width: 20%;
-      right: 10%;
-      bottom: -33%;
+   .home-container {
+      flex-direction: column;
    }
 
    .btn-img {
-      width: 300px;
-      object-fit: cover;
-      margin-bottom: -3rem;
-      /* display: none; */
+      display: none;
    }
 
-   .btn-primary {
-      width: max-content;
-   }     
-
-   .count-down {
-      bottom: 15%;
-      left: 14%;
-   }
-
-
-
+   
    .about-item {
       width: 80%;
    }
@@ -224,37 +157,15 @@
    .slot {
       margin: 2rem 0.5rem 1rem;
    }
+
+   .btn-primary {
+      width: max-content;
+   }   
 }
 
 
 @media screen and (max-width: 660px) {
-   
-   .landing-bg {
-      width: 100vw;
-   }
-
-   .buttons {
-      left: 40%;
-      bottom: -40%;
-   }
-
-   .btn-img {
-      display: none;
-   }
-
-   .count-down {
-      bottom: 0%;
-      left: 20%;
-   }
-
-   .num {
-      font-size: 2.5rem;
-   }
-
-   .landing-bg {
-      object-position: 0%;
-   }
-
+  
    .contact-info {
       flex-direction: column;
    }
