@@ -18,9 +18,11 @@
       margin-bottom: -3rem;
       /* display: none; */
    }
-
+    .btn-primary {
+      width: max-content;
+   }   
    .count-down {
-      bottom: 18%;
+      bottom: 2%;
       left: 20%;
    }
 }
@@ -227,10 +229,13 @@
 
 @media screen and (max-width: 660px) {
    
+   .landing-bg {
+      width: 100vw;
+   }
 
    .buttons {
-      left: 38%;
-      bottom: -33%;
+      left: 40%;
+      bottom: -40%;
    }
 
    .btn-img {
@@ -238,8 +243,12 @@
    }
 
    .count-down {
-      bottom: 5%;
+      bottom: 0%;
       left: 20%;
+   }
+
+   .num {
+      font-size: 2.5rem;
    }
 
    .landing-bg {
