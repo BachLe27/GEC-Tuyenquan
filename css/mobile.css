@@ -126,7 +126,7 @@
 
    .slider {
       width: fit-content;
-      height: 400px;
+      height: max-content;
    }
 
    .dots {
@@ -138,9 +138,10 @@
    }
 
    
-.slide img:nth-child(2) {
-   display: block;
-}
+   .slide img:nth-child(2) {
+      display: block;
+      height: 100%;
+   }
 
 
    .contact-item {
