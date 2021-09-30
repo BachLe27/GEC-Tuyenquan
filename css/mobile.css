@@ -204,7 +204,7 @@
       margin-top: 5rem;
    }
 
-   .location-icon::before {
+   .location-icon:before {
       display: none;
    }
    .break {
