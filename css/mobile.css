@@ -164,11 +164,16 @@
    .btn-primary {
       width: max-content;
    }   
+   .slide {
+      object-fit: cover;
+      height: 70%;
+   }
+
 }
 
 
 @media screen and (max-width: 660px) {
-  
+   
    .contact-info {
       flex-direction: column;
    }
