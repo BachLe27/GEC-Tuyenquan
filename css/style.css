@@ -285,6 +285,10 @@
    /* object-fit: contain; */
 }
 
+.slide img:nth-child(2) {
+   display: none;
+}
+
 .slider .overlay {
    top: 0;
    position: absolute;

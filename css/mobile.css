@@ -133,10 +133,15 @@
       display: none;
    }
    
-   .slide img {
-      object-fit: fill;
-      height: 400px;
+   .slide img:first-child {
+      display: none;
    }
+
+   
+.slide img:nth-child(2) {
+   display: block;
+}
+
 
    .contact-item {
       margin-left: 0rem;
