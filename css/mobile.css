@@ -174,7 +174,7 @@
    }  
 
    .timeline {
-      width: 350px;
+      width: 100%;
    }
  
    .slot {
@@ -190,13 +190,13 @@
       height: 70%;
    }
 
-
-
+   .count-down {
+      margin-top: 5rem;
+   }
 }
 
 
 @media screen and (max-width: 660px) {
-   
    .contact-info {
       flex-direction: column;
    }
