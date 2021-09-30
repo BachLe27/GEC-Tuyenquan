@@ -107,6 +107,13 @@
       flex-direction: column;
    }
 
+   .location-icon:before {
+      display: none;
+   }
+
+   .break {
+      display: inline;
+   }
    #about {
       top: -5rem;
    }
@@ -216,6 +223,9 @@
 @media screen and (max-width: 660px) {
    .contact-info {
       flex-direction: column;
+   }
+   .location-icon:before {
+      display: none;
    }
 }
 
